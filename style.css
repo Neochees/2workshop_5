@@ -1,0 +1,14 @@
+/*Formulier*/
+form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    float: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 15px;
+}
+#content form fieldset{
+    height: auto;
+    width: 350px;
+}
