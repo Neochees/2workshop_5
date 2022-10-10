@@ -11,7 +11,7 @@
     <div id="container">
         <h1>Velden voor HTML-formulieren</h1>
         <form>
-        <fieldset>
+        <fieldset class="fieldset">
             <legend><h2>Tekstvelden</h2></legend>
             <p><label for="Voornaam">Voornaam</label> <input id="voornaam" type="text" name="Voornaam"/></p>
             
@@ -19,31 +19,50 @@
             <p><label for="password">Wachtwoord</label><input type="password" name="pwd"/></p>
             </fieldset>
 
-        <p>Voornaam: <input type="tekst" name="Voornaam."/></p>
-        <p>Achternaam: <input type="tekst" name="Achternaam"/></p>
-        <p><input type="password" name="pwd"/>&nbsp;&nbsp;definieert een wachtwoord veld</p>
+        <fieldset class="fieldset">
+            <legend><h2>Radio Button</h2></legend>
+            <p><input type="radio" name="geslacht" value="Man"/>Man</p>
+            <p><input type="radio" name="geslacht" value="Vrouw"/>Vrouw</p>
+            </fieldset>
 
-        <h2>Radio Button</h2>
-        <p><input type="radio" name="geslacht" value="Man"/>Man</p>
-        <p><input type="radio" name="geslacht" value="Vrouw"/>Vrouw</p>
-        <h2>Checkbox</h2>
-        <p><input type="checkbox" name="vehicle" value="Fiets"/>Ik ben op de fiets</p>
-        <p><input type="checkbox" name="vehicle" value="Auto"/>Ik ben met de auto</p>
-
-        <h2>Dropdownlist</h2>
-        <p><select name="Balletdanseressen">
-        <option value="Martha Graham">Martha Graham</option>
-        <option value="Carlotta Grisi">Carlotta Grisi</option>
-        <option value="Agrippina Vaganova" selected="selected">Agrippina Vaganova</option>
-        <option value="Natalie Portman">Natalie Portman</option>
-        </select></p>
-
-        <h2>Tekstarea</h2>
-        <p><textarea rows="7" cols="25" name="opmerking"></textarea></p>
-
-        <h2>Submit knop</h2>
-        <p><input type="submit" value="Verzenden"/></p>
+        <fieldset class="fieldset">
+            <legend><h2>Checkbox</h2></legend>
+            <p><input type="checkbox" name="vehicle" value="Fiets"/>Ik ben op de fiets</p>
+            <p><input type="checkbox" name="vehicle" value="Auto"/>Ik ben met de auto</p>
+            </fieldset>
         
+        <fieldset class="fieldset">
+            <legend><h2>Dropdownlist</h2></legend>
+            <p><select name="Balletdanseressen">
+            <option value="Martha Graham">Martha Graham</option>
+            <option value="Carlotta Grisi">Carlotta Grisi</option>
+            <option value="Agrippina Vaganova" selected="selected">Agrippina Vaganova</option>
+            <option value="Natalie Portman">Natalie Portman</option>
+            </select></p>
+            </fieldset>
+
+        <fieldset class="fieldset">
+            <legend><h2>Tekstarea</h2></legend>
+            <p><textarea rows="7" cols="25" name="opmerking"></textarea></p>
+
+            <h2>Submit knop</h2>
+            <p><input type="submit" value="Verzenden"/></p>
+        </fieldset>
+        </form>
+    </div>
+    <div class="form2" class="wrap">
+        <form>
+            <fieldset>
+                <legend><h2>Bericht</h2></legend>
+                <p>
+                    <input type="text" name="voornaam"placeholder="Voornaam *"  required>
+                    <input type="text" name="achternaam"placeholder="Achternaam *"  required>
+                    <input type="text" name="emailadres"placeholder="E-mailadres *"  required>
+                    <input type="text" name="website" placeholder="Website">
+                    <textarea rows="7" cols="44" name="bericht" placeholder="Bericht *" required></textarea>
+                    <input type="submit" value="Verstuur">
+                </p>
+            </fieldset>
         </form>
     </div>
 </body>
